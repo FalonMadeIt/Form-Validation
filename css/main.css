@@ -1,0 +1,52 @@
+
+body{
+	background-color: #EBF9EC;
+	padding-top: 3em;
+}
+
+h1{
+	text-align: center;
+}
+
+button{
+	
+	background-color: #94B46A;
+	color: #EEE;
+	font-size: 2em;
+	text-shadow: -1px 1px #417cb8;
+  border: none;
+	padding: 0.5em;
+}
+input[type=text]{
+	font-size: 1.6em;
+	background-color: #343C4B;
+	color: white;
+	padding: 0.4em;
+	border: 2px solid black;
+	
+}
+
+
+ .parsley-custom-error-message{
+	font-size: 1.2em;
+	color:white;
+}
+
+
+button:hover{
+	background-color: mediumseagreen;
+	/*color: black;*/
+}
+
+
+.box{
+	background-color: #394251;
+	padding: 4em;
+	padding-left: 6em;
+	margin-left: auto; 
+	margin-right: auto;
+	max-width: 30%;
+	border-radius: 10%;
+}
+
+

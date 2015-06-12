@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <h1>Checkout / Form Validation Demo</h1>
+  <body>
+   	<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="node_modules/parsleyjs/dist/parsley.min.js"></script>
+    <div class="box">
+    		<form data-parsley-validate>
+    			
+          <input  name="name" 
+                  type="text" 
+                  placeholder="Card-holder Name" 
+                  pattern="[\w]+\W[\w]+" 
+                  required
+                  data-parsley-error-message="Full name is required">
+                  
+          <input  name="name" 
+                  type="text" 
+                  placeholder="Card Number" 
+                  pattern="^[\d]{4}-?[\d]{4}-?[\d]{4}-?[\d]{4}$" 
+                  required
+                  data-parsley-error-message="Must be 16 digits">
+                  
+          <input  name="name" 
+                  type="text" 
+                  placeholder="Exspiration date" 
+                  pattern="^[\d]{2}-?[\d]{2}$" 
+                  required
+                  data-parsley-error-message="Format must be month and year. Example: 09/15">
+    			
+    			<button>Complete my Purchase</button>
+    
+    		</form>
+    </div>
+
+  </body>
+</html>
